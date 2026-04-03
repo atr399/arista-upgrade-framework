@@ -1,0 +1,15 @@
+name: arista-upgrade-lab
+
+topology:
+  kinds:
+    ceos:
+      image: ceos:4.30.1F
+  nodes:
+    arista-sin-01:
+      kind: ceos
+      mgmt-ipv4: 172.20.20.2
+    arista-sin-02:
+      kind: ceos
+      mgmt-ipv4: 172.20.20.3
+  links:
+    - endpoints: ["arista-sin-01:eth1", "arista-sin-02:eth1"]

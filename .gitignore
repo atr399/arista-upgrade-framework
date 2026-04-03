@@ -1,0 +1,8 @@
+.venv/
+logs/
+clab-arista-upgrade-lab/
+state_data/
+upgrade_report.csv
+__pycache__/
+*.swi
+*.tar
